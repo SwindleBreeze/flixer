@@ -2,7 +2,7 @@
 
 Flixer is an innovative web application that facilitates movie discovery and sharing preferences. Users can log in, connect using generated keys, and express their movie likes and dislikes. The app intelligently matches users, making it easier for them to decide on movies to watch together.
 
-Explore Flixer at [flixr.koderverse.com](flixr.koderverse.com) and make your movie nights more enjoyable! 🎬🍿
+Explore Flixer at [flixr.koderverse.com](https://flixr.koderverse.com/) and make your movie nights more enjoyable! 🎬🍿
 
 ## Table of Contents
 1. [Instructions for Use on Local Machine](#instructions-for-use-on-local-machine)
