@@ -62,5 +62,5 @@ Flixer is a Progressive Web App (PWA) and can be easily downloaded to your phone
 - Edin Ćehić, 63210054 - edinehi53@gmail.com
 - Dino Džaferagić, 63210059 - dino.dzaferagic8@gmail.com
 - Aljaž Justin, 63210133 - aljaz.justin@gmail.com
-- Amar Mehic, 63210209 - am5348@student.uni-lj.si
+- Amar Mehić, 63210209 - am5348@student.uni-lj.si
 - Tibor Koderman, 63210151 - tibor.koderman@gmail.com
