@@ -29,7 +29,7 @@ Explore Flixer at [flixr.koderverse.com](https://flixr.koderverse.com/) and make
 
 To use the web app, follow these steps:
 
-1. Connect to [flixr.koderverse.com](flixr.koderverse.com).
+1. Connect to [flixr.koderverse.com](https://flixr.koderverse.com/)
 
 2. Disliking movies is available without logging in. However, to like and view movies, users need to log in or register new accounts.
 
