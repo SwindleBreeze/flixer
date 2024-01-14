@@ -1,0 +1,49 @@
+{
+    "name": "Flixer",
+    "short_name": "FLX",
+    "description": "Flixer",
+    "start_url": "/index.php",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4285f4",
+    "icons": [
+      {
+        "src": "./flixer-logo192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "./flixer-logo144.png",
+        "sizes": "144x144",
+        "type": "image/png"
+      },
+      {
+        "src": "./flixer-logo512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "screenshots": [
+        {
+            "src": "./desktop-screenshot.png",
+            "sizes": "1280x633",
+            "type": "image/png",
+            "purpose": "any",
+            "form-factor": "wide"
+        },
+        {
+            "src": "./desktop-screenshot.png",
+            "sizes": "1280x633",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "./mobile-screenshot.png",
+            "sizes": "1334x660",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ]
+      
+  }
+  

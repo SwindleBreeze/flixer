@@ -1,0 +1,888 @@
+
+#imgcontainer{
+    margin: auto;
+    width: 50vh;
+    height: 50%;
+    border: 2px solid black;
+    position: relative;
+    user-select: none;
+}
+
+#container{
+    margin: auto;
+    position: relative;
+    top: 30%;
+    height: fit-content;
+}
+
+#presentimg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    user-select: none;
+}
+
+#guest{
+    position: relative;
+    margin: auto;
+    width: fit-content;
+    top: 50%;
+    z-index: 1000;
+    font-family: CustomTitleFont;
+    transform: translate(0%, 0%);
+}
+
+#infoButton{
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  z-index: 1000;
+}
+
+#imgInfo{
+    background-color: rgb(63, 62, 62);
+    border-radius: 50%;
+    color: white;
+    font-size: 4vh;
+    border: none;
+    cursor: pointer;
+    padding-left: 1.40vh;
+    padding-right: 1.43vh;
+    outline: none;
+    opacity: 60%;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+#imgInfo:hover{
+    opacity: 100%;
+    transition: 0.3s;
+}
+
+#MovieSummary{
+    z-index: 10;
+    position: absolute;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    bottom: 10px;
+    color: lightgray;
+    opacity: 90%;
+    font-size: smaller;
+}
+
+#shortinfobackg{
+    background-color: rgba(143,143,143,0.9);
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 100%;
+    height: 10%;
+    bottom: 0px;
+    left: 0px;
+    object-fit: fill;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: CustomTitleFont;
+    z-index: 10;
+    position: absolute;
+    color: #012A46;
+    opacity: 100%;
+    font-size: 6vh;
+    overflow-y: auto;
+    display: inline-block;
+}
+
+#shortinfobackg::-webkit-scrollbar{
+  display: none;
+}
+
+#shortinfobackg{
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body{
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #0F2027, #203A43, #2C5364);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top,#0F2027, #203A43, #2C5364 ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+html {
+  height: 100%;
+}
+  
+
+#sign_in {
+  position: absolute;
+  padding: 10px;
+  background-color: #282f3e;
+  border: outset;
+  border-radius: 5px;
+  border-color: #1e242e;
+  width: 15vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-120%, -25%);
+}
+
+#register {
+  position: absolute;
+  padding: 10px;
+  background-color: #282f3e;
+  border: outset;
+  border-radius: 5px;
+  border-color: #1e242e;
+  width: 15vw;
+  top: 50%;
+  right: 50%;
+  transform: translate(120%, -20%);
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    margin-bottom: 20px;
+    
+  }
+  
+  /* Modal Content */
+
+  .modal-content {
+    background-color: #1b2029;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #11141a;
+    width: 80%;
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+    color: white;
+  }
+
+  /* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+  /* LIKE AND DISLIEK BUTTONS*/
+
+  #buttons{
+    margin:auto;
+    position: relative;
+  }
+  
+  #likeButt{
+      left: 75%;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidenav abb{
+    padding: 8px 8px 8px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    text-align: center;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    margin: 10px;
+  }
+
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+
+  .searchnav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .searchnav abb{
+    padding: 8px 8px 8px 8px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    margin: 10px;
+    text-align: center;
+  }
+
+  .searchnav a {
+    padding: 8px 8px 8px 8px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .searchnav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .searchnav .closebtn {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    font-size: 36px;
+    margin-right: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+/* ---------------------------------------------------CSS FOR MATCHES PAGE-------------------------------------------------*/
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  .column{
+    padding-top: 5px;
+  }
+  .column img{
+    margin: 5px;
+    background-color: #282f3e;
+    border: outset;
+    padding: 2px;
+    border-radius: 5px;
+    border-color: #1e242e;
+  }
+  .column img:hover{
+    border-color: #3c424d;
+    cursor:pointer;
+  }
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+    .column img{
+      margin: auto;
+      display:block;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+    .column img{
+      margin: auto;
+      display:block;
+    }
+  }
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+  .searchicon{
+    right: 0;
+    position: absolute;
+    padding-right: 5px;
+    height: 40px;
+    width: 40px;
+  }
+
+  #searchbar {
+    position: absolute;
+    width: 96%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #333c4e;
+    background-image: url('./search.png');
+    background-size: 30px;
+    right:0;
+    background-position: 15px 6px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin-right: 5px;
+  }
+  .SortButt {
+    box-shadow:inset 4px 2px 37px -15px #000000;
+    background:linear-gradient(to bottom, #333c4e 5%, #3c4247 100%);
+    background-color:#333c4e;
+    border-radius:19px;
+    border:1px solid #000000;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    padding:8px 8px;
+    text-decoration:none;
+    text-shadow:1px 2px 2px #28459c;
+    text-align: center;
+  }
+  .SortButt:hover {
+    background:linear-gradient(to bottom, #3c4247 5%, #333c4e 100%);
+    background-color:#3c4247;
+  }
+  .SortButt:active {
+    position:relative;
+    top:1px;
+  }
+
+  .MenuItemButt {
+    box-shadow:inset 4px 2px 37px -15px #000000;
+    background:linear-gradient(to bottom, #333c4e 5%, #3c4247 100%);
+    background-color:#333c4e;
+    border-radius:19px;
+    border:1px solid #000000;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    padding:0px 8px;
+    text-decoration:none;
+    text-shadow:1px 2px 2px #28459c;
+    text-align: center;
+  }
+  .MenuItemButt:hover {
+    background:linear-gradient(to bottom, #3c4247 5%, #333c4e 100%);
+    background-color:#3c4247;
+  }
+  .MenuItemButt:active {
+    position:relative;
+    top:1px;
+  }
+
+  .likeCont{
+    position: absolute;
+    float:right;
+    display: flex;
+  }
+  .likebutt {
+    box-shadow:inset 4px 2px 37px -15px #000000;
+    background:linear-gradient(to bottom, #333c4e 5%, #3c4247 100%);
+    background-color:#333c4e;
+    border-radius:100px;
+    border:1px solid #000000;
+    display:inline-block;
+    cursor:pointer;
+    color:green;
+    font-family:Arial;
+    font-size:5vh;
+    padding:5px 12px;
+    text-decoration:none;
+    text-shadow:1px 2px 2px #28459c;
+    text-align: center;
+    outline:none;
+    display:flexbox;
+    position: relative;
+    float: right;
+    margin-top: 5px;
+
+  }
+  .likebutt:hover {
+    background:linear-gradient(to bottom, #3c4247 5%, #333c4e 100%);
+    background-color:#3c4247;
+  }
+  .likebutt:active {
+    position:relative;
+    top:1px;
+  }
+  
+  .dislikebutt {
+    box-shadow:inset 4px 2px 37px -15px #000000;
+    background:linear-gradient(to bottom, #333c4e 5%, #3c4247 100%);
+    background-color:#333c4e;
+    border-radius:100px;
+    border:1px solid #000000;
+    display:inline-block;
+    cursor:pointer;
+    color:red;
+    font-family:Arial;
+    font-size:5vh;
+    padding:5px 5px;
+    text-decoration:none;
+    text-shadow:1px 2px 2px #28459c;
+    text-align: center;
+    outline:none;
+    display:flexbox;
+    position: relative;
+    float: left;
+    margin-top: 5px;
+  }
+  .dislikebutt:hover {
+    background:linear-gradient(to bottom, #3c4247 5%, #333c4e 100%);
+    background-color:#3c4247;
+  }
+  .dislikebutt:active {
+    position:relative;
+    top:1px;
+  }
+
+    .frontpageSignIn {
+      box-shadow:inset 4px 2px 37px -15px #000000;
+      background:linear-gradient(to bottom, #333c4e 5%, #3c4247 100%);
+      background-color:#333c4e;
+      border-radius:5px;
+      border:1px solid #000000;
+      display:inline-block;
+      cursor:pointer;
+      color:white;
+      font-family:Arial;
+      font-size:15px;
+      padding:5px 5px;
+      text-decoration:none;
+      text-shadow:1px 2px 2px #28459c;
+      text-align: center;
+      outline:none;
+    }
+    .frontpageSignIn:hover {
+      background:linear-gradient(to bottom, #3c4247 5%, #333c4e 100%);
+      background-color:#3c4247;
+    }
+    .frontpageSignIn:active {
+      position:relative;
+      top:1px;
+    }
+
+    .frontpageRegister {
+      box-shadow:inset 4px 2px 37px -15px #000000;
+      background:linear-gradient(to bottom, #333c4e 5%, #3c4247 100%);
+      background-color:#333c4e;
+      border-radius:5px;
+      border:1px solid #000000;
+      display:inline-block;
+      cursor:pointer;
+      color:white;
+      font-family:Arial;
+      font-size:15px;
+      padding:5px 5px;
+      text-decoration:none;
+      text-shadow:1px 2px 2px #28459c;
+      text-align: center;
+      outline:none;
+    }
+    .frontpageRegister:hover {
+      background:linear-gradient(to bottom, #3c4247 5%, #333c4e 100%);
+      background-color:#3c4247;
+    }
+    .frontpagerRegister:active {
+      position:relative;
+      top:1px;
+    }
+
+
+    @font-face{
+      font-family: CustomTitleFont;
+      src: url(./BebasNeue/TTF/BebasNeue-Bold.ttf);
+    }
+
+    @font-face{
+      font-family: CustomFontRegular;
+      src: url(./BebasNeue/TTF/BebasNeue-Regular.ttf)
+    }
+
+    @font-face {
+      font-family: CustomSummary;
+      src: url(./BebasNeue/TTF/BebasNeue-Book.ttf);
+    }
+
+  .TITLE{
+    font-family: CustomTitleFont;
+    font-size: 13vh;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .UNDERTITLE{
+    font-family: CustomTitleFont;
+    font-size: 6vh;
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  #validationInfo
+  {
+    font-family: CustomTitleFont;
+    color: red;
+    text-align: center;
+    position: relative;
+    font-size: 3vh;
+    width: 100%;
+
+  }
+
+  .QUOTE{
+    font-family: CustomTitleFont;
+    font-size: 3.5vh;
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+  }
+  @media screen and (max-width: 800px)
+  {
+    .TITLE{
+      font-size: 60px;
+    }
+    .UNDERTITLE{
+      font-size: x-large;
+    }
+    .QUOTE{
+      font-size: large;
+    }
+    #register{
+      width: 200px;
+      left: 55%;
+    }
+    #sign_in{
+      width: 200px;
+      left: 20%;
+    }
+  }
+
+  @media screen and (max-width: 650px)
+  {
+    .TITLE{
+      font-size: 60px;
+    }
+    .UNDERTITLE{
+      font-size: x-large;
+    }
+    .QUOTE{
+      font-size: large;
+    }
+    #register{
+      width: 175px;
+      left: 55%;
+      margin-left: 5px;
+    }
+    #sign_in{
+      width: 175px;
+      left: 8%;
+      margin-right: 5px;
+    }
+  }
+
+
+
+
+  .fade-in {
+    animation: fadeIn ease 5s;
+    -webkit-animation: fadeIn ease 5s;
+    -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation: fadeIn ease 5s;
+  }
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+
+  
+  .KeyGenButt {
+    box-shadow:inset 4px 2px 37px -15px #000000;
+    background:linear-gradient(to bottom, #333c4e 5%, #3c4247 100%);
+    background-color:#333c4e;
+    border-radius:8px;
+    border:1px solid #000000;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    padding:8px 8px;
+    text-decoration:none;
+    text-shadow:1px 2px 2px #28459c;
+    text-align: center;
+    outline:none;
+  }
+  .KeyGenButt:hover {
+    background:linear-gradient(to bottom, #3c4247 5%, #333c4e 100%);
+    background-color:#3c4247;
+  }
+  .KeyGenButt:active {
+    position:relative;
+    top:1px;
+  }
+  
+  #KeyGenContainer{
+      position: absolute;
+      top: 45%;
+      padding: 10px;
+      background-color: #282f3e;
+      border: outset;
+      border-radius: 5px;
+      border-color: #1e242e;
+      width: 45%;
+      left: 27.5%
+  }
+
+  #modal1{
+    z-index: 10000;
+  }
+
+  #ModalTitle{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: CustomFontRegular;
+  }
+
+  #TrailerVideo
+  {
+    width:100%;
+    margin: auto;
+  }
+
+  #ModalImage{
+    height: 480px;
+    padding-right: 5px;
+  }
+  #MediaDiv{
+    display: inline-flex;
+    width: 100%;
+    margin: auto;
+    padding: auto;
+    padding-top:5px;
+  }
+
+  #ModalSummary{
+    padding: 15px;
+    padding-top: 2px;
+    font-size: 20px;
+    background-color: #14181f;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+  }
+
+  
+  #summarytitle{
+    font-family: CustomFontRegular;
+    font-size: 20px;
+    padding: 12px;
+    padding-bottom: 0;
+    background-color: #14181f;
+    margin-top: 3px;
+  }
+  #ModalTitlePar{
+    font-family: CustomFontRegular;
+    font-size: 15px;
+  }
+  #ModalGenres{
+    font-family: CustomFontRegular;
+  }
+  #ModalRuntime{
+    font-family: CustomFontRegular;
+  }
+  #ModalReleaseDate{
+    font-family: CustomFontRegular;
+  }
+
+  #NumberOfMatches{
+    font-family: CustomFontRegular;
+    font-size: 20px;
+  }
+
+  #matchestext{
+    font-family: CustomFontRegular;
+    font-size: 20px;
+  }
+  
+  #keygenInstructions{
+    width: 50%;
+    margin: auto;
+    margin-top:3.5%;
+    font-size: 8vh;
+  }
+
+  #indexReturnButt{
+    font-size: large;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 8px;
+
+  }
+
+  @media screen and (max-width: 768px) {
+
+    #keygenInstructions{
+      font-size: 8vw;
+    }
+
+    #imgcontainer{
+      width: 100%;
+    }
+    #ModalImage {
+      height: auto;
+      width: 100%;
+    }
+  
+    #MediaDiv {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #ModalSummary {
+      padding: 15px;
+      font-size: 20px;
+      background-color: #14181f;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 100;
+      margin-top: 10px;
+    }
+  
+    #TrailerVideo {
+      width: 100%;
+      height: auto;
+    }
+
+    #sign_in {
+      width: 40vw;
+      transform: translate(-55%, -26%);
+    }
+  
+    #register {
+      width: 40vw;
+      transform: translate(5%, -20%);
+    }
+  
+    #container {
+      width: 50vw;
+      top: 20%;
+    }
+
+    #guest{
+      top: 50%;
+    }
+  }
+
+  /*------------- PRIKAZE NO VISIB CE JE PREMAJHEN EKRAN-----------------*/
+  #noVisib{
+      font-family: CustomFontRegular;
+      font-size: 12vh;
+      width: 70vw;
+      text-align: center;
+      margin: auto;
+      display:none;
+  }
+
+  @media screen and (max-height: 450px){
+    #main{
+      display: none;
+    }
+    #row1{
+      display: none;
+    }
+    #noVisib{
+      display: block;
+    }
+
+    #KeyGenContainer{
+      display: none;
+    }
+    #keygenInstructions{
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 600px){
+  }
+  

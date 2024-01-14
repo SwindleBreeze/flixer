@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>KeyGen</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            #friendkey{
+                font-size:xx-large; 
+                margin-top: 20px; 
+            }
+
+            @media (max-width: 768px) {
+                #friendkey{
+                    width:80%
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <h3 class="TITLE" id='keygenInstructions'>To connect to ONE or MORE friends please use one of the options below</h3>
+        <div id="KeyGenContainer">
+            <button class="KeyGenButt" id="myKey" style="width:100%; margin-bottom:4px; font-size: 4vh;" onclick="GenerateMyKey()">Generate your key</button>
+            <button class="KeyGenButt" id="friendKey"  style="width:100%; margin-top:4px;font-size: 4vh" onclick="InsertFriendKey()">Use your friends key</button>
+        </div>
+        
+        <div class="modal" style="padding-top: 20vh;" >
+            <div class="modal-content" style="background-color: #282f3e; text-align: center; height:25vh;">
+                <span class="close">&times;</span>
+                <p id="KEYGEN" style="display:none; margin-bottom: 40px; color:white; font-size: xx-large;">Some text in the Modal..</p>
+                
+                <form id="myForm" style="display:none; margin-bottom: 40px;">
+                    <input type="text" id="friendkey" placeholder="Your friends key">
+                </form>
+
+                <button class="KeyGenButt" id="MyCont" style="display:none; width:80%; margin:auto;">Continue</button>
+            </div>
+        </div>
+
+        <div id="noVisib">
+            Unfortunately we cannot display our application on such a small screen,
+            Please resize your broswer or turn your phone.
+        </div>
+    </body>
+</html>
